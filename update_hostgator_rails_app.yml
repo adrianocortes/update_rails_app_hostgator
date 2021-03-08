@@ -1,0 +1,14 @@
+- hosts: hostgator
+  become: yes
+  become_user: "{{ username }}"
+  user: "{{ ssh_user }}"
+
+  roles:
+    - update_git_repository
+    - clear_assets
+    - precompile_assets
+    - restart_passenger
+
+  environment:
+    TMPDIR: "/home/{{ username }}/tmp"
+    TMP: "/home/{{ username }}/tmp"

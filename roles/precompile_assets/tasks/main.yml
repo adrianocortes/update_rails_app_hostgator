@@ -1,0 +1,7 @@
+---
+# tasks file for precompile_assets
+
+- name: Precompile Assets in project
+  shell:
+    cmd: /usr/bin/scl enable {{ ruby_version }} 'RAILS_ENV={{rails_env}} bundle exec rake assets:precompile'
+    chdir: "{{ dir_project }}"

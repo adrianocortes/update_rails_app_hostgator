@@ -1,0 +1,8 @@
+- name: Get stuff from git
+  git:
+    repo: "{{ repo_project }}"
+    dest: "{{ dir_project }}"
+    key_file: "{{ repo_key_file }}"
+    update: yes
+    accept_hostkey: true
+    version: "{{ repo_branch | default('main')}}"

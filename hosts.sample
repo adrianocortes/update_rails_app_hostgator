@@ -1,0 +1,12 @@
+[hostgator]
+<hostname or ip>
+
+[hostgator:vars]
+ssh_user=< user for ssh access >
+username=< username used in ssh access >
+repo_project=< repo URL used in git access >
+dir_project=< Folder for rails app >
+repo_key_file=< SSH key file name for access git repository. Full path if out project folder. Just name if in files folder (project/files) >
+repo_branch=< branch for git checkout. Default "main">
+ruby_version=< Ruby version used in Hostgator app environment Ex.: ea-ruby27 >
+rails_env=< environment to be passed for rails commands >

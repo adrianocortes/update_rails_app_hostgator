@@ -1,0 +1,3 @@
+---
+# tasks file for update_git_repository
+- include: update_from_remote_main.yml

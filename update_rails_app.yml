@@ -1,0 +1,13 @@
+- hosts: local
+  become: yes
+  user: cidadegoias
+
+  roles:
+    - update_git_repository
+#    - clear_assets
+#    - precompile_assets
+#    - restart_passenger
+
+
+#scl enable ea-ruby27 bash
+#sudo -u jones /usr/local/bin/mycommand

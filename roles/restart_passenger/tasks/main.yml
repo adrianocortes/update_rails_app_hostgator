@@ -1,0 +1,7 @@
+---
+# tasks file for restart_passanger
+
+- name: Precompile Assets in project
+  shell:
+    cmd: /usr/bin/scl enable {{ ruby_version }} 'touch tmp/restart.txt'
+    chdir: "{{ dir_project }}"
