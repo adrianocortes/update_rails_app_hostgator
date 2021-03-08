@@ -41,6 +41,7 @@ brew install ansible
 ```
 <br>
 <br>
+
 ## Setup
 
 
@@ -68,6 +69,7 @@ In "hosts" file, update all parameters:
 - rails_env => environment to be passed for rails commands
 <br>
 <br>
+
 ## Usage
 
 In project folder, run command:
